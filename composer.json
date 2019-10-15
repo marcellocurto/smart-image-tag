@@ -1,0 +1,17 @@
+{
+    "name": "marcellocurto/smart-image-tag",
+    "description": "Smart image tagging plugin.",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Roark",
+            "email": "marcello@roark.at"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+      "psr-4": {"Inc\\": "./inc"}
+    }
+}

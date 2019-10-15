@@ -1,0 +1,14 @@
+$bg: #d9cb9e;
+$off: #9ea3a8;
+$white: #fff;
+$wp-blue: #0085ba;
+$wp-grey: #ccc;
+$btn-grey: #f7f7f7;
+$wp-background: #f1f1f1;
+
+@import "image-upload.scss";
+@import "checkboxes.scss";
+
+.hide-element {
+  display: none;
+}

@@ -1,0 +1,152 @@
+.upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid $wp-grey;
+  background-color: white;
+  box-shadow: 0 1px 0 $wp-grey;
+  white-space: nowrap;
+  border-radius: 3px;
+
+  .dashicons {
+    font-size: 32px;
+    margin: 10px;
+  }
+
+  .button-hero {
+    margin: 20px 0;
+  }
+}
+
+.image-wrapper {
+  padding: 40px;
+  border-bottom: 1px solid #23282d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $btn-grey;
+}
+
+.analyzedImg {
+  height: auto;
+  max-width: 320px;
+  box-shadow: 5px 5px 3px #ccc;
+  transition: all 200ms ease;
+}
+
+.analyzedImg:hover {
+  box-shadow: 5px 5px 3px #b3b3b3;
+}
+
+.checktags {
+  padding: 0 20px 20px 20px;
+}
+
+.image-title {
+  margin: 20px 0 0 0;
+}
+
+.checkedtags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toggleText {
+  font-weight: bold;
+}
+
+.imagetaglabel {
+  margin-bottom: 15px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  background-color: $btn-grey;
+  border: 1px solid $wp-grey;
+  box-shadow: 0 1px 0 $wp-grey;
+  white-space: nowrap;
+  border-radius: 3px;
+  padding: 10px 36px;
+}
+
+.imagetaglabel:hover {
+  background-color: #f1f1f1;
+}
+
+#fieldsetSave {
+  padding: 20px 20px 0 20px;
+}
+
+.save-wrapper {
+  margin-top: 20px;
+}
+
+.save-button-wrapper {
+  padding: 20px;
+}
+
+.color-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.ui-label-text {
+  .dashicons-editor-help:hover {
+    color: $wp-blue;
+    cursor: pointer;
+  }
+}
+
+#items {
+  margin: 20px 0;
+
+  .item {
+    border: 1px solid $wp-grey;
+    background-color: white;
+    box-shadow: 0 1px 0 $wp-grey;
+    white-space: nowrap;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+  .dashicons {
+    margin-left: 7px;
+  }
+
+  .dashicons-yes {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  .checkedtags {
+    input[type="checkbox"]:checked + label {
+      background-color: #7f9aa5;
+      color: white;
+      border: 1px solid black;
+
+      .dashicons-yes {
+        display: inline-block;
+      }
+      .dashicons-plus {
+        display: none;
+      }
+    }
+  }
+}
+
+.checkbox-section {
+  padding: 40px 20px 0 20px;
+}
+
+h2.label-headline {
+  font-size: 28px;
+  margin: 0;
+}
+
+.input-wrapper.toggleall-wrapper {
+  display: inline-block;
+}

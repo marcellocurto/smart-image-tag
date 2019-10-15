@@ -1,0 +1,81 @@
+#whereToSave {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid $wp-grey;
+  box-shadow: 0 1px 0 $wp-grey;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+.whereToSaveInputWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ui-label-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin userSelect($value) {
+  -webkit-touch-callout: $value;
+  -webkit-user-select: $value;
+  -khtml-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+@mixin ui-toggle($height, $wp-blue, $off) {
+  margin: 0;
+  padding: 0;
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked + label {
+      border-color: $wp-blue;
+      background: $wp-blue;
+      box-shadow: inset 0 0 0 #{$height / 2} $wp-blue;
+
+      > div {
+        margin-left: $height;
+      }
+    }
+  }
+
+  label {
+    transition: all 200ms ease;
+    display: inline-block;
+    position: relative;
+    @include userSelect(none);
+    background: $off;
+    box-shadow: inset 0 0 0 0 $wp-blue;
+    border: 2px solid $off;
+    border-radius: $height + 2;
+    width: $height * 2;
+    height: $height;
+
+    div {
+      transition: all 250ms ease;
+      background: $white;
+      width: $height;
+      height: $height;
+      border-radius: $height / 2;
+    }
+
+    & > div:hover,
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+div.ui-toggle {
+  @include ui-toggle(20px, $wp-blue, $off);
+}
